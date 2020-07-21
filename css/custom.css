@@ -1,7 +1,12 @@
 body{
-    font-size: 1.56em;
+    font-size: 1.46em;
 }
 
 .btn-override{
     border-radius: 5px;
+}
+
+.main-title{
+    margin-top: 10%; 
+    font-size: 260%;
 }
