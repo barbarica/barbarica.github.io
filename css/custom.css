@@ -1,3 +1,7 @@
 body{
     font-size: 1.56em;
 }
+
+.btn-override{
+    border-radius: 5px;
+}
