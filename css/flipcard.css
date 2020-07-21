@@ -1,3 +1,20 @@
+.flip-card3 {
+    
+    position:absolute;
+    top: 40em;
+    right: 10px;
+    z-index: 100;
+
+    background-color: transparent;
+    width: 19%;
+    height: 500px;
+    perspective: 1000px;
+  }
+  
+.flip-card3:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
 .flip-card2 {
     
     position:absolute;
@@ -10,6 +27,7 @@
     height: 500px;
     perspective: 1000px;
   }
+
 .flip-card2:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
