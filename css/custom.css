@@ -5,6 +5,19 @@ body{
 /*.btn-override{
 }
 */
+.btn-custom{
+    width: 40%;
+    padding: 2%;
+    border: 1px solid #0c7982;
+    background-color: #0c7982;
+    border-radius: 3px;
+    color: white;
+}
+.btn-custom:hover {
+    border: 1px solid #10a3b1;
+    background-color: #0e9eac;
+
+}
 
 .main-title{
     margin-top: 10%; 

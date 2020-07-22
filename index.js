@@ -1,5 +1,8 @@
 const container     = document.getElementById('container')
 const body          = document.getElementById('body')
+var fc              = document.getElementsByClassName('fc')
+var listFab         = document.getElementById('list-fab')
+var circleFab       = document.getElementById('circle-fab')
 
 if ( ( window.innerWidth > 800 ) && ( window.innerHeight > 600)) {
     // desktop
@@ -8,6 +11,16 @@ if ( ( window.innerWidth > 800 ) && ( window.innerHeight > 600)) {
 } else {
     // mob
     body.style.fontSize = "1.4em"
+    document.body.style.backgroundImage = "url('img_tree.png')";
+
+    // float a-button
+    listFab.style.right = '2%'
+    circleFab.style.right = '20%'
+
+    // flip bars
+    for(let i=0; i<fc.length; i++){
+        fc[i].style.display = "none"
+    }
 }
 
 // fab
@@ -16,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.FloatingActionButton.init(elems, {direction: 'left'});
     //instance.open();
     //instance.close();
+    
 });
 
 

@@ -2,8 +2,10 @@
     display: block;
     position: fixed;
     bottom: 20px;
-    right: 45px;
+    right: 3vw;
     z-index: 999999999;
+
+    background-color: teal;
 }
 
 .floatingButtonInner {
@@ -15,16 +17,19 @@
     width: 60px;
     height: 60px;
     text-align: center;
-    background: -webkit-linear-gradient(45deg, #8769a9, #507cb3);
-    background: -o-linear-gradient(45deg, #8769a9, #507cb3);
-    background: linear-gradient(45deg, #8769a9, #507cb3);
-    color: #fff;
+    /*
+    background: -webkit-linear-gradient(45deg, teal, rgb(0, 182, 182));
+    background: -o-linear-gradient(45deg, teal, rgb(0, 182, 182));
+    background: linear-gradient(45deg, teal, rgb(0, 182, 182));
+    */
+    background-color: rgb(255, 255, 255);
+    color: teal;
     line-height: 50px;
     position: absolute;
     border-radius: 50% 50%;
     bottom: 0px;
     right: 0px;
-    border: 5px solid #b2bedc;
+    border: 5px solid teal;
     /* opacity: 0.3; */
     opacity: 1;
     transition: all 0.4s;
@@ -39,7 +44,7 @@
 .floatingButton:focus,
 .floatingButton:active {
     opacity: 1;
-    color: #fff;
+    color: teal;
 }
 
 
@@ -71,16 +76,17 @@
 .floatingMenu li a {
     padding: 8px 15px;
     display: inline-block;
-    background: #ccd7f5;
-    color: #6077b0;
+    background: rgba(0, 170, 170);
+    color: white;
+    font-weight: 600;
     border-radius: 5px;
     overflow: hidden;
     white-space: nowrap;
     transition: all 0.4s;
     /* -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22);
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22); */
-    -webkit-box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
-    box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
+    /* -webkit-box-shadow: 1px 3px 5px rgba(0, 170, 170, 0.5);
+    box-shadow: 1px 3px 5px rgba(0, 170, 170, 0.5); */
 }
 
 .floatingMenu li a:hover {
