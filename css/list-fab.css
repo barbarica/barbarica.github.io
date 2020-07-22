@@ -22,7 +22,7 @@
     background: -o-linear-gradient(45deg, teal, rgb(0, 182, 182));
     background: linear-gradient(45deg, teal, rgb(0, 182, 182));
     */
-    background-color: rgb(230, 230, 230);
+    background-color: teal; /*rgb(230, 230, 230);*/
     /*background: linear-gradient(-45deg, rgb(200, 200, 200) 50%, rgb(230, 230, 230) 50%);*/
 
     color: teal;
@@ -31,7 +31,7 @@
     border-radius: 50% 50%;
     bottom: 0px;
     right: 0px;
-    border: 5px solid teal;
+    border: 5px solid rgba(230, 230, 230);
     /* opacity: 0.3; */
     opacity: 1;
     transition: all 0.4s;
@@ -39,6 +39,7 @@
 
 .floatingButton .fa {
     font-size: 15px !important;
+    color: #fff;
 }
 
 .floatingButton.open,
@@ -46,7 +47,7 @@
 .floatingButton:focus,
 .floatingButton:active {
     opacity: 1;
-    color: teal;
+    color: #131417;
 }
 
 
@@ -78,7 +79,7 @@
 .floatingMenu li a {
     padding: 8px 15px;
     display: inline-block;
-    background: rgba(0, 170, 170);
+    background: rgb(0, 145, 145);
     color: white;
     font-weight: 600;
     border-radius: 5px;
