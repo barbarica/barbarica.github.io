@@ -14,8 +14,8 @@
 
 .floatingButton {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     /*
     background: -webkit-linear-gradient(45deg, teal, rgb(0, 182, 182));
@@ -31,14 +31,14 @@
     border-radius: 50% 50%;
     bottom: 0px;
     right: 0px;
-    border: 5px solid rgba(230, 230, 230);
+    /*border: 5px solid rgba(230, 230, 230);*/
     /* opacity: 0.3; */
     opacity: 1;
     transition: all 0.4s;
 }
 
 .floatingButton .fa {
-    font-size: 15px !important;
+    font-size: 13px !important;
     color: #fff;
 }
 

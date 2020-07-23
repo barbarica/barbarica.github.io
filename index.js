@@ -2,9 +2,10 @@ const container     = document.getElementById('container')
 const body          = document.getElementById('body')
 var fc              = document.getElementsByClassName('fc')
 var listFab         = document.getElementById('list-fab')
-var circleFab       = document.getElementById('circle-fab')
 var sbInput         = document.getElementById('sb-input')
 var sb              = document.getElementById('sb')
+var sbOutput        = document.getElementById('search-bar-op')
+var sbOutputCross   = document.getElementById('search-bar-op-cross')
 
 // config fab list
 $(document).ready(function(){
@@ -46,15 +47,6 @@ $(document).ready(function(){
 });
 // fab list end
 
-// fab
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {direction: 'left'});
-    //instance.open();
-    //instance.close();
-    
-});
-
 
 // Desktop  / Mob
 if ( ( window.innerWidth > 800 ) && ( window.innerHeight > 600)) {
@@ -73,8 +65,7 @@ if ( ( window.innerWidth > 800 ) && ( window.innerHeight > 600)) {
     container.style.marginTop = "5em"
 
     // float a-button
-    listFab.style.right = '2%'
-    circleFab.style.right = '20%'
+    listFab.style.right = '5%'
 
     // flip bars
     for(let i=0; i<fc.length; i++){
@@ -82,19 +73,36 @@ if ( ( window.innerWidth > 800 ) && ( window.innerHeight > 600)) {
     }
 
     // search bar input
+    sbInput.style.maxHeight = "1em !important"
+    sb.style.overflowX = "0"
     sb.style.width = "90vw";
     sb.style.top = "2em"
-    /*sbInput.style.borderBottom = "1px solid black"*/ 
 }
 
 
 
 
 // sb input dynamics start
-function onSearchClick(){
-    sbInput.innerHTML = "&#xF002; &nbsp;"
-    cursorManager.setEndOfContenteditable(sbInput);
-}
+sbInput.addEventListener('click', e => {
+    if (sbInput.innerText.includes('Type what you are looking for ...')){
+        sbInput.innerHTML = ''
+        cursorManager.setEndOfContenteditable(sbInput);
+    }
+})
+
+sbInput.addEventListener('keydown', e => {
+    if (e.code == 'Enter'){
+        sbOutput.style.display = "block"
+        e.preventDefault();
+        //console.log('broke!')
+    }
+})
+
+sbOutputCross.addEventListener('click', ()=>{
+    console.log('clicked')
+    sbOutput.style.display = "none"
+    sbInput.innerHTML = "&#xF002; Type what you are looking for ..."
+})
 // sb input dynamics end
 
 
@@ -166,3 +174,4 @@ function onSearchClick(){
     }
 
 }( window.cursorManager = window.cursorManager || {}));
+
