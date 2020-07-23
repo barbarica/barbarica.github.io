@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/Materialize/material-icons.css" rel="stylesheet">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="css/Materialize/materialize.min.css" media="screen,projection">
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="css/Materialize/materialize.min.js"></script>
     
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
@@ -18,11 +18,11 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
 
-    <link rel="stylesheet" type="text/css" href="css/flipcard.css">
+    <link rel="stylesheet" type="text/css" href="css/Flipcard/flipcard.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 
     <script src="jQuery/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/list-fab.css">
+    <link rel="stylesheet" type="text/css" href="css/List-Fab/list-fab.css">
     
     <title>Barbarica Infallible</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -31,6 +31,25 @@
 </head>
 
 <body id='body'>
+
+  <!-- Search bar -->
+  <div id="sb" class="search-bar">
+    <div id="sb-input" class="sb-input" placeholder=""
+      style="
+          margin: 0 0 0px;
+          color: rgba(0, 0, 0, 0.648);
+          font-size: 1.2em;
+          font-family: Arial, sans-serif, FontAwesome;
+          border: 0px solid black;
+        "
+      contenteditable="true"
+      onclick="onSearchClick()"
+    >
+    &#xF002; Type what you are looking for ...
+  </div>
+    
+  </div>
+  <!-- Search bar  end-->
 
   <!-- LIST FAB START -->
     <div id='list-fab' class="floatingButtonWrap">
