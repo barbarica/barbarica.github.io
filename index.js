@@ -7,6 +7,11 @@ var sb              = document.getElementById('sb')
 var sbOutput        = document.getElementById('search-bar-op')
 var sbOutputCross   = document.getElementById('search-bar-op-cross')
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, {accordion: false});
+});
+
 // config fab list
 $(document).ready(function(){
     $('.floatingButton').on('click',
@@ -46,7 +51,6 @@ $(document).ready(function(){
     });
 });
 // fab list end
-
 
 // Desktop  / Mob
 if ( ( window.innerWidth > 800 ) && ( window.innerHeight > 600)) {
