@@ -91,7 +91,7 @@ sbInput.addEventListener('click', e => {
 })
 
 sbInput.addEventListener('keydown', e => {
-    if (e.code == 'Enter'){
+    if ( e.keyCode==13){
         sbOutput.style.display = "block"
         e.preventDefault();
         //console.log('broke!')
