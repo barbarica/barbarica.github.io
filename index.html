@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id='head'>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +23,13 @@
 
     <script src="jQuery/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/List-Fab/list-fab.css">
+
+    <!-- Make sure your page supports utf-8 characterset. -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Load TensorFlow.js. This is required to use the qna model. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/2.0.1/tf.min.js" integrity="sha512-wrKS/vGtvlTorYU2ABZW3ctWMYgWeOc8E3NgS00nm9xcTat+s6Q1nSoss6bPl4WOpqC2+EJ1TZzlGB0JzqetgA==" crossorigin="anonymous"></script>
+    <!-- Load the qna model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/qna"> </script>
     
     <title>Barbarica Infallible</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -46,7 +53,8 @@
         "
       contenteditable="true"
     >
-    &#xF002; Type what you are looking for ...
+    <!--&#xF002; Type what you are looking for ...-->
+    <i class='fa fa-search'></i>&nbsp;Type what you are looking for ...
     </div>
 
   </div>
@@ -329,6 +337,7 @@
 
 
 <script src='index.js'></script>
+<script src='js/modules/bert/bert.js'></script>
 
 <script>
 
