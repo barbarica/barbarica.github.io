@@ -101,7 +101,7 @@ sbInput.addEventListener('keydown', e => {
 sbOutputCross.addEventListener('click', ()=>{
     //console.log('clicked')
     sbOutput.style.display = "none"
-    sbInput.innerHTML = "&#xF002; Type2 what you are looking for ..."
+    sbInput.innerHTML = "&#xF002; Type what you are looking for ..."
 })
 // sb input dynamics end
 
