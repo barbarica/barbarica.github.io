@@ -91,7 +91,7 @@ sbInput.addEventListener('click', e => {
 })
 
 sbInput.addEventListener('keydown', e => {
-    if ( e.keyCode==13){
+    if ( e.keyCode==13 ){
         sbOutput.style.display = "block"
         e.preventDefault();
         //console.log('broke!')
@@ -99,9 +99,9 @@ sbInput.addEventListener('keydown', e => {
 })
 
 sbOutputCross.addEventListener('click', ()=>{
-    console.log('clicked')
+    //console.log('clicked')
     sbOutput.style.display = "none"
-    sbInput.innerHTML = "&#xF002; Type what you are looking for ..."
+    sbInput.innerHTML = "&#xF002; Type2 what you are looking for ..."
 })
 // sb input dynamics end
 
