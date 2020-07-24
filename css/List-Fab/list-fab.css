@@ -6,10 +6,12 @@
     z-index: 999999999;
 
     background-color: teal;
+
 }
 
 .floatingButtonInner {
     position: relative;
+
 }
 
 .floatingButton {
