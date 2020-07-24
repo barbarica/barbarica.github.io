@@ -1,7 +1,7 @@
 .flip-card3 {
     
     position:absolute;
-    top: 42em;
+    top: 5.5em;
     right: 10px;
     z-index: 100;
 
@@ -33,23 +33,6 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
-
-/*2*/
-/*--*/
-.flip-card2 {
-  position:absolute;
-  top: 5.5em;
-  right: 10px;
-  z-index: 100;
-
-  background-color: transparent;
-  width: 19vw;
-  height: 500px;
-  perspective: 1000px;
-}
-.flip-card2:hover .flip-card2-inner {
-  transform: rotateY(180deg);
 }
 
 /* news */
