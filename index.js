@@ -70,6 +70,7 @@ if ( ( window.innerWidth > 800 ) && ( window.innerHeight > 600)) {
 
     // float a-button
     listFab.style.right = '5%'
+    listFab.style.bottom = '4%'
 
     // flip bars
     for(let i=0; i<fc.length; i++){
