@@ -90,10 +90,10 @@
     overflow: hidden;
     white-space: nowrap;
     transition: all 0.4s;
-    /* -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22);
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22); */
-    /* -webkit-box-shadow: 1px 3px 5px rgba(0, 170, 170, 0.5);
-    box-shadow: 1px 3px 5px rgba(0, 170, 170, 0.5); */
+    -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 .floatingMenu li a:hover {
