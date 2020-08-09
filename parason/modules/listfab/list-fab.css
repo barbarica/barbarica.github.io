@@ -1,0 +1,102 @@
+.floatingButtonWrap {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 3vw;
+    z-index: 999999999;
+
+    background-color: teal;
+
+}
+
+.floatingButtonInner {
+    position: relative;
+
+}
+
+.floatingButton {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    /*
+    background: -webkit-linear-gradient(45deg, teal, rgb(0, 182, 182));
+    background: -o-linear-gradient(45deg, teal, rgb(0, 182, 182));
+    background: linear-gradient(45deg, teal, rgb(0, 182, 182));
+    */
+    background-color: teal; /*rgb(230, 230, 230);*/
+    /*background: linear-gradient(-45deg, rgb(200, 200, 200) 50%, rgb(230, 230, 230) 50%);*/
+
+    color: teal;
+    line-height: 50px;
+    position: absolute;
+    border-radius: 50% 50%;
+    bottom: 0px;
+    right: 0px;
+    /*border: 5px solid rgba(230, 230, 230);*/
+    /* opacity: 0.3; */
+    opacity: 1;
+    transition: all 0.4s;
+
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+.floatingButton .fa {
+    font-size: 13px !important;
+    color: #fff;
+}
+
+.floatingButton.open,
+.floatingButton:hover,
+.floatingButton:focus,
+.floatingButton:active {
+    opacity: 1;
+    color: #131417;
+}
+
+
+.floatingButton .fa {
+    transform: rotate(0deg);
+    transition: all 0.4s;
+}
+
+.floatingButton.open .fa {
+    transform: rotate(270deg);
+}
+
+.floatingMenu {
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+    /* width: 200px; */
+    display: none;
+}
+
+.floatingMenu li {
+    width: 100%;
+    float: right;
+    list-style: none;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.floatingMenu li a {
+    padding: 8px 15px;
+    display: inline-block;
+    background: rgb(0, 145, 145);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.4s;
+    -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.floatingMenu li a:hover {
+    margin-right: 10px;
+    text-decoration: none;
+}
