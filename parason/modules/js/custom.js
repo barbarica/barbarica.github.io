@@ -1,5 +1,7 @@
 const navContainer   = document.getElementById('nav-container')
+const mainMenu       = document.getElementById('main-menu')
 const navToggle      = document.getElementById('nav-toggle')
+const navDropdown    = document.getElementById('navbarSupportedContent')
 
 
 if ( ( window.innerWidth > 800 ) && ( window.innerHeight > 600)) {
@@ -20,11 +22,11 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;  
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.display = "flex";
-    
+    mainMenu.style.top = "-72px"; // unhide
   } else {
-    document.getElementById("navbar").style.display = "none";
-    //console.log(navToggle.classList.contains('collapsed'))
+    mainMenu.style.top = "-145px"; // hide
+    navDropdown.classList.remove("show")
+    navToggle.ariaExpanded = "false"
   }
   
  prevScrollpos = currentScrollPos;
