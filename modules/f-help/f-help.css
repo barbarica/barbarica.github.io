@@ -1,0 +1,12 @@
+.f-help{
+    position: fixed;
+    bottom: 4vh;
+    right: 7vw;
+    z-index: 1000;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+    color: black;
+}
