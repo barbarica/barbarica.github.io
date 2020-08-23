@@ -64,6 +64,6 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
-typeWriter()
+//typeWriter()
 // Infallible Message -----------------------------------------
 // ------------------------------------------------------------
