@@ -18,13 +18,20 @@
 </head>
 <body>
   <!--================Header Menu Area =================-->
-  <header class="header_area">
-    <div class="main_menu">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container box_1620">
+  <header class="header_area" >
+    <div id='main-menu' class="main_menu" style="transition: top 0.3s;">
+      <nav id='navbar' class="navbar navbar-expand-lg navbar-light">
+        <div id="nav-container" class="container box_1620">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand logo_h" href="index.html"
+          style="color: white; font-family: 'Rajdhani',sans-serif; font-size: 170%;">
+            <!-- img src="img/logo1.png" alt="" -->
+            <b>
+              BARBARICA 
+              INFALLIBLE 
+            </b>
+          </a>
+          <button id="nav-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -32,23 +39,23 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav justify-content-end">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
-              <li class="nav-item"><a class="nav-link" href="feature.html">Feature</a></li> 
-              <li class="nav-item"><a class="nav-link" href="pricing.html">Price</a>
+              <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+              <li class="nav-item"><a class="nav-link" href="#">Feature</a></li> 
+              <li class="nav-item"><a class="nav-link" href="#">Price</a>
               <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">Pages</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                  <li class="nav-item"><a class="nav-link" href="blog-details.html">Blog Details</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
                 </ul>
 							</li>
-              <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
 
             <ul class="navbar-right">
               <li class="nav-item">
-                <button class="button button-header bg">Sign up</button>
+                <button class="button button-header bg" style="padding-top: 1vh; padding-bottom: 1vh;">Sign up</button>
               </li>
             </ul>
           </div> 
@@ -94,7 +101,7 @@
               {elementType: 'labels.text.fill', stylers: [{color: '#A3A3A3'}]}
             ];
             var map = new google.maps.Map(document.getElementById('map'), {
-              center: {lat: -31.197, lng: 150.744},
+              center: {lat: 13.06, lng: 80.23},
               zoom: 9,
               styles: grayStyles,
               scrollwheel:  false
@@ -112,21 +119,21 @@
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-home"></i></span>
             <div class="media-body">
-              <h3>California United States</h3>
-              <p>Santa monica bullevard</p>
+              <h3>Tamil Nadu, India</h3>
+              <p>Chennai</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-headphone"></i></span>
             <div class="media-body">
-              <h3><a href="tel:454545654">00 (440) 9865 562</a></h3>
+              <h3><a href="tel:+919600146419">+91 9600146419</a></h3>
               <p>Mon to Fri 9am to 6pm</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-email"></i></span>
             <div class="media-body">
-              <h3><a href="mailto:support@colorlib.com">support@colorlib.com</a></h3>
+              <h3><a href="mailto:beyondre4son@gmail.com">beyondre4son@gmail.com</a></h3>
               <p>Send us your query anytime!</p>
             </div>
           </div>
@@ -226,7 +233,7 @@
 			</div>
 			<div class="footer-bottom row align-items-center text-center text-lg-left">
 				<p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 				<div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
 					<a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -245,5 +252,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <script src="js/jquery.ajaxchimp.min.js"></script>
   <script src="js/mail-script.js"></script>
   <script src="js/main.js"></script>
+
+  <script src="modules/js/custom.js"></script>
+  <script src="modules/listfab/list-fab.js"></script>
 </body>
 </html>

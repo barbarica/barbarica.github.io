@@ -48,8 +48,13 @@ window.onscroll = function() {
 }
 // handle navbar size end--------------------------------------
 // ------------------------------------------------------------
+
+// ------------------------------------------------------------
+// Infallible Message -----------------------------------------
 var i = 0;
-var txt = 'We are Invincible, Quite Unbeatable and Indestuctibe. This is Barbarika Infallible. Welcome to our Affordable A.I initiative - Safe, secure and Private.';
+var txt = `We are Invincible, Quite Unbeatable and Indestuctibe. 
+This is Barbarika Infallible. Welcome to our Affordable A.I initiative - 
+Safe, Secure and Private A.I for your Business`;
 var speed = 50;
 
 function typeWriter() {
@@ -59,7 +64,6 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
-
 typeWriter()
-// ------------------------------------------------------------
 // Infallible Message -----------------------------------------
+// ------------------------------------------------------------
