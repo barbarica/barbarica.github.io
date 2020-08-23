@@ -1,12 +1,12 @@
 .floatingButtonWrap {
     display: block;
     position: fixed;
-    bottom: 20px;
+
+    bottom: 4vh;/*20px;*/
     right: 3vw;
+    
     z-index: 999999999;
-
-    background-color: teal;
-
+    background-color: #412fb3;
 }
 
 .floatingButtonInner {
@@ -20,14 +20,14 @@
     height: 50px;
     text-align: center;
     /*
-    background: -webkit-linear-gradient(45deg, teal, rgb(0, 182, 182));
-    background: -o-linear-gradient(45deg, teal, rgb(0, 182, 182));
-    background: linear-gradient(45deg, teal, rgb(0, 182, 182));
+    background: -webkit-linear-gradient(45deg, #412fb3, rgb(0, 182, 182));
+    background: -o-linear-gradient(45deg, #412fb3, rgb(0, 182, 182));
+    background: linear-gradient(45deg, #412fb3, rgb(0, 182, 182));
     */
-    background-color: teal; /*rgb(230, 230, 230);*/
+    background-color: #412fb3; /*rgb(230, 230, 230);*/
     /*background: linear-gradient(-45deg, rgb(200, 200, 200) 50%, rgb(230, 230, 230) 50%);*/
 
-    color: teal;
+    color: #412fb3;
     line-height: 50px;
     position: absolute;
     border-radius: 50% 50%;
@@ -83,7 +83,7 @@
 .floatingMenu li a {
     padding: 8px 15px;
     display: inline-block;
-    background: rgb(0, 145, 145);
+    background: #412fb3;
     color: white;
     font-weight: 600;
     border-radius: 5px;

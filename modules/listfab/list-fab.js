@@ -1,5 +1,11 @@
-// Needs JQuery
+if ( ( window.innerWidth > 800 ) && ( window.innerHeight > 600)) {
+    // desktop
+} else {
+    // mob
+    document.getElementById('list-fab').style.right = "7vw"
+}
 
+// Needs JQuery
 // config fab list
 $(document).ready(function(){
     $('.floatingButton').on('click',
